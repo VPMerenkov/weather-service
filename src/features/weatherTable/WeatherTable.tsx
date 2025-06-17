@@ -31,9 +31,9 @@ const WeatherTable = (props: Props) => {
   });
 
   return (
-    <Stack component={"section"} className="bg-white shadow-sm rounded-lg overflow-hidden">
+    <Stack component={"section"} className="bg-white shadow-sm rounded-lg overflow-hidden max-h-100">
       <div
-        className="overflow-x-auto"
+        className="overflow-y-auto"
         style={{
           scrollbarWidth: "thin",
           scrollbarColor: "#CBD5E0 #F7FAFC",
