@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./styles/index.css";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
-import WeatherTable from "./features/weatherTable/WeatherTable";
+import Home from "./pages/Home";
 
 async function enableMSW() {
   const { worker } = await import("./app/api/msw/browser");
@@ -14,9 +14,7 @@ enableMSW().then(() =>
   createRoot(document.getElementById("root")!).render(
     <StrictMode>
       <Provider store={store}>
-        <>
-          <WeatherTable />
-        </>
+        <Home />
       </Provider>
     </StrictMode>
   )
